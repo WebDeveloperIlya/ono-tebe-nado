@@ -1,3 +1,3 @@
 # ono-tebe-nado
 
-https://github.com/IlyaKovel/ono-tebe-nado.git
+https://github.com/WebDeveloperIlya/ono-tebe-nado/
