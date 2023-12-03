@@ -1,1 +1,176 @@
-/* место для вашего кода */
+@font-face {
+  font-family: 'Raleway';
+  src: url(/fonts/Raleway.ttf);
+}
+
+body{
+  width: 1440px;
+  background-color: #fff;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 92px;
+  margin-right: 49px; 
+  margin-bottom: 92px;
+  margin-left: 51px;
+}
+
+.header__links-list{
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  width: 388px;
+  height: 23px;
+}
+
+.header__links-list-item{
+  flex-shrink: 0;
+  color: #000;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit{
+  list-style: none;
+  text-decoration: none;
+}
+
+.header__link{
+  color: #000;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.cover{
+  position: absolute;
+  width: 1440px;
+  height: 757px;
+
+}
+
+.cover__img{
+  position: absolute;
+  z-index: -1;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 757px;
+}
+
+.overlay{
+  position: absolute;
+  z-index: 0;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 757px;
+  opacity: 0.6;
+  background: #000;
+}
+
+.cover__title{
+  position: absolute;
+  top: 165px;
+  left: 50px;
+  z-index: 1;
+  width: 1340px;
+  height: 355px;
+  letter-spacing: 30px;
+}
+
+.cover__title__first{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cover__title__second{
+  display: flex;
+  justify-content: center;
+}
+
+.cover__title__third{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cover__title__h1{
+  margin: 0;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+.letter-spacing-extended{
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 115%;
+  letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.aligned-text{
+  text-align: start;
+}
+
+.aligned-text_center{
+  text-align: center;
+}
+
+.aligned-text_right{
+  text-align: right;
+}
+
+.cover__description{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  width: 1018px;
+  margin-top: 667px;
+  margin-left: 372px;
+}
+
+.cover__description-text{
+  width: 633px;
+  height: 28px;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 15px;
+}
+
+.bet-button{
+  position: absolute;
+  z-index: 1;
+  width: 193px;
+  height: 28px;
+  margin: 20px 743px;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+  background-color: transparent; 
+  border: 1px solid #FFF;
+}
