@@ -5,6 +5,7 @@
   padding-right: 49px; 
   padding-bottom: 92px;
   padding-left: 51px;
+  justify-content: space-between;
 }
 
 .header__links-list{
@@ -40,7 +41,7 @@
   text-decoration-line: underline;
 }
 
-.without__underline{
+.header__without__underline{
   text-decoration-line: none;
 }
 
@@ -58,8 +59,7 @@
   flex-shrink: 0;
   min-width: 148px;
   min-height: 105px;
-  padding-right: 355px;
-  padding-left: 209px;
+  justify-content: start;
 }
 
 .cover{
@@ -68,6 +68,8 @@
   flex-flow: column;
   max-width: 1440px;
   background-image: url("../images/cover.jpg");
+  background-size: 100%;
+  background-position: 100%;
 }
 
 .overlay{
@@ -82,8 +84,7 @@
 .cover__title{
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(3, calc(100%/3));
   gap: 20px;
   column-gap: 0;
   padding-top: 165px;
@@ -98,7 +99,6 @@
   grid-column-start: 1;
   grid-row-start: 1;
   justify-content: flex-start;
-  max-height: 100px;
 }
 
 .cover__title__second{
@@ -107,20 +107,16 @@
   grid-row-start: 2;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
-  margin-top: 15px;
-  margin-left: 80px;
+  text-align: center;
 }
 
 .cover__title__third{
   display: flex;
   grid-column-start: 3;
   grid-row-start: 3;
-  justify-content: end;
-  min-height: 100px;
-  margin-top: 8px;
-  margin-left: 20px;
-  padding-left: 20px;
+  align-items: start;
+  text-align: end;
+  justify-content: flex-end;
 }
 
 .cover__title__h1{
@@ -135,14 +131,7 @@
 }
 
 .letter-spacing-extended{
-  color: #FFF;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 100px;
-  font-style: normal;
-  line-height: 115%;
   letter-spacing: 60px;
-  text-transform: uppercase;
 }
 
 .aligned-text{
@@ -161,15 +150,14 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  padding-top: 147px;
+  padding-top: 105px;
   padding-right: 50px;
   padding-bottom: 50px;
-  padding-left: 422px;
   white-space: nowrap;
+  justify-content: end;
 }
 
 .cover__description-text{
-  width: 633px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -182,14 +170,11 @@
 }
 
 .bet-button{
-  position: relative;
-  right: -28px;
   z-index: 1;
   width: 257px;
   height: 52px;
-  margin-left:  50px; 
+  margin-left: 78px; 
   border: 1px solid #FFF;
-  padding-left: 2px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -224,7 +209,7 @@
 .lots__cards{
   display: flex;
   justify-content: space-between;
-  width: 430px;
+  width: 450px;
   margin-left: 50px;
 }
 
@@ -234,14 +219,17 @@
   flex-flow: column;
   flex-shrink: 0;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   margin-right: 25px;
+  background-position: 100%;
+  background-size: 100%;
 }
 
 .card__title{
   z-index: 1;
   margin-top: 50px;
   margin-left: 40px;
+  margin-right: 40px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -256,6 +244,7 @@
   z-index: 0;
   margin-bottom: 50px;
   margin-left: 40px;
+  margin-right: 40px;
   color: #FFF;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -301,11 +290,17 @@
 
 .about{
   display: grid;
+  justify-content: center;
   flex-shrink: 0;
   grid-template-columns: 430px 885px;
   gap: 25px;
   margin-top: 181px;
-  margin-left: 50px;
+}
+
+.about__column{
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
 }
 
 .about__logo{
@@ -317,9 +312,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin-left: 95px;
   border-radius: 50%;
-  padding: 0px 95px;
   background-color: #000;
 }
 
@@ -381,7 +374,6 @@
 
 .footer__menu{
   flex-shrink: 0;
-  width: 149px;
 }
 
 .footer__menu-list{
@@ -404,7 +396,7 @@
 
 .footer__menu-link{
   /*Я не знаю что сюда добавить*/
-  color: #000; 
+  text-underline-offset: 4px;
 }
 
 .footer__social-list{
@@ -415,7 +407,6 @@
 
 .footer__social-list-item{
   list-style: none;
-  scroll-behavior: smooth;
 }
 
 .footer__social-link{
@@ -423,6 +414,6 @@
 }
 
 .footer__social-icon{
-  width: 80px;
+  width: 48px;
   height: 48px;
 }
