@@ -25,14 +25,14 @@
         </li>
       </ul> 
     </nav>
-    <!-- Вы написали изменить альт на языке страницы, но что это значит? Какой альт поставить? -->
     <a href="#" class="header__logo"><img src="images/logo-black.jpg" alt="Логотип проекта" class="header__logo-image"></a>
     <address class="address header__address">
       <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
       <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
-      <p class="header-footer__address" class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
+      <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
     </address>
   </header>
+
   <main>
     <!-- секция оно-тебе-надо -->
     <section class="cover">
@@ -41,23 +41,19 @@
  
         <!-- оформляем первую строку -->
         <span class="aligned-text aligned-text_left">о 
-            <span class="cover__title__leter__spacing">но</span>
+            <span class="cover__title__letter__extra__spacing">но</span>
         </span>
  
         <!-- оформляем вторую строку с модификацией по центру -->
         <span class="aligned-text aligned-text_center">те
-            <span class="cover__title__leter__spacing">бе</span>
+            <span class="aligned-text_center cover__title__letter__extra__spacing">бе</span>
         </span>
  
         <!-- оформляем третью строку с модификацией направо-->
-        <span class="aligned-text aligned-text_right">н
-            <span class="cover__title__leter__spacing">ад</span>
-            <span class="cover__title__leter__spacing">о</span>
+        <span class="aligned-text aligned-text_right cover__title__letter__extra__spacing">н
+            <span class="aligned-text_right cover__title__letter__spacing">ад</span>
+            <span class="aligned-text_right cover__title__letter__no__spacing">о</span>
         </span>
-        <!-- Я попробовал сделать, как вы указали после второй итерации, 
-          но все равно не получается выровнять вторую и третью строчку по макету, пробовал разные способы, 
-          но кроме позиционирования по координатам или использование отступов ничего не придумал. 
-          Использовал и flex, но не получается все равно -->
  </h1>
  
       <div class="cover__description">
@@ -66,6 +62,7 @@
       </div>
     </section>
 
+    <!-- секция с карточками -->
     <section class="lots" id="lots">
       <h2 class="lots__heading" id="#lots">Лоты</h2>
       <div class="lots__cards">
@@ -131,6 +128,7 @@
       <a href="#look_more" class="lots__look-more-link">посмотреть больше</a>
     </section>
 
+    <!-- секция об аукционе -->
     <section class="about" id="about">
       <div class="about__column">
         <div class="about__logo">
@@ -158,11 +156,12 @@
     </section>
   </main>
 
+  <!-- футер -->
   <footer class="footer">
     <address class="address footer__address">
       <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
       <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
-      <p class="header-footer__address" class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
+      <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
     </address>
     <nav class="footer__menu">
       <ul class="footer__menu-list">
