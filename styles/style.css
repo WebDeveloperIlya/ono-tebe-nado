@@ -8,6 +8,11 @@
   padding-left: 51px;
 }
 
+.header__gap{
+  gap: 355px;
+  display: inline-flex;
+}
+
 .header__links-list{
   display: inline-flex;
   flex-shrink: 0;
